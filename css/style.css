@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
+
+
+body {
+   
+    font-family: "Martian Mono", monospace;
+    margin: 0px;
+    /* забираємо стандартні відступи в тега body */
+}
+
+.button {
+    min-width: 130px;
+    height: 40px;
+    background-image: linear-gradient(rgb(214, 202, 254), rgb(158, 129, 254));
+    border: none;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    box-shadow: 1px 3px 0px rgb(139, 113, 255);
+    transition-duration: .3s;
+  }
+  
+  .cartIcon {
+    width: 14px;
+    height: fit-content;
+  }
+  
+  .cartIcon path {
+    fill: white;
+  }
+  
+  .button:active {
+    transform: translate(2px ,0px);
+    box-shadow: 0px 1px 0px rgb(139, 113, 255);
+    padding-bottom: 1px;
+  }
+  
+
+
+  .my-card {
+    padding: 28px;
+    background: transparent;
+    transition: background .2s linear;
+    border-radius: 10px;
+    max-width: 350px;
+}
+
+.my-card:hover {
+    background: #DCE5E2;
+    cursor: pointer;
+    transition: background .2s linear;
+    color: #272727;
+}
+
+.light-theme .my-card:hover {
+    background: #ffffff;
+
+}
+
+.text-my-card {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.description-card {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* number of lines to show */
+    -webkit-box-orient: vertical;
+    font-size: 0.7rem;
+
+}
+
+.price-card {
+    font-size: 1rem;
+    line-height: 1rem;
+    /* 120% */
+    color: rgb(154, 131, 255);
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.my-card img {
+    width: 244px;
+    height: 214px;
+    object-fit: contain;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+}
+
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
